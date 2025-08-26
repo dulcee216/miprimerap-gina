@@ -1,121 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Postres Pastel</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --text: #3a3a3a;
-      --bg1: #fde2e4;
-      --bg2: #cce2cb;
-      --bg3: #fdf6c9;
-      --bg4: #d7e3fc;
-      --card: #fff;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Poppins', sans-serif;
-      min-height: 100vh;
-      background: linear-gradient(135deg, var(--bg1), var(--bg2), var(--bg3), var(--bg4));
-      color: var(--text);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #fce9f1, #e9f7fc);
+      color: #444;
+      margin: 0;
+      padding: 0;
       text-align: center;
-      padding: 20px;
-      background-size: 400% 400%;
-      animation: gradientBG 12s ease infinite;
-    }
-
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
     }
 
     header {
-      margin-bottom: 30px;
+      padding: 20px;
+      background-color: #f8d3e0;
+      color: #6b4d57;
+      font-size: 2em;
+      font-weight: bold;
     }
-    header h1 {
-      font-size: 3rem;
-      color: #6b1140;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+    h1 {
+      margin: 20px 0;
+      color: #b86b77;
+      font-size: 2.5em;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-      width: 100%;
-      max-width: 1000px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
     }
 
     .card {
-      background: var(--card);
-      border-radius: 20px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-      padding: 20px;
-      transition: transform .25s ease, box-shadow .25s ease;
-    }
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-    }
-    .card h2 {
-      font-size: 1.4rem;
-      margin: 12px 0 6px;
-      color: #6b1140;
-    }
-    .card p {
-      font-size: .95rem;
-      color: #555;
+      background-color: #fffafc;
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
     }
 
-    footer {
-      margin-top: 40px;
-      font-size: 0.9rem;
-      color: #444;
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    .card h2 {
+      color: #c97a8d;
+      font-size: 1.3em;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Postres de Ensueño</h1>
-    <p>Colores pasteles · Dulzura en cada bocado</p>
-  </header>
-
-  <section class="grid">
+  <header>🍰 Dulces Postres</header>
+  <h1>Disfruta lo más dulce en tonos pasteles</h1>
+  <div class="grid">
     <div class="card">
-      <h2>Cupcake de Vainilla</h2>
-      <p>Esponjoso y decorado con crema suave en tonos pastel.</p>
+      <img src="Pasteldemora.png">
+      <h2>Pastel de Fresa</h2>
     </div>
     <div class="card">
-      <h2>Macarons</h2>
-      <p>Crujientes por fuera, suaves por dentro, en colores delicados.</p>
+      <img src="https://i.ibb.co/TgY6DY2/cupcake.png" alt="Cupcake pastel">
+      <h2>Cupcake Vainilla</h2>
     </div>
     <div class="card">
-      <h2>Pastel de Frutilla</h2>
-      <p>Bizcocho ligero con fresas frescas y crema batida.</p>
+      <img src="https://i.ibb.co/g9bf7Jj/helado.png" alt="Helado pastel">
+      <h2>Helado de Mora</h2>
     </div>
     <div class="card">
-      <h2>Tarta de Frutas</h2>
-      <p>Base crujiente, crema pastelera y frutas dulces.</p>
+      <img src="https://i.ibb.co/Zh7CN3t/cheesecake.png" alt="Cheesecake pastel">
+      <h2>Cheesecake</h2>
     </div>
-    <div class="card">
-      <h2>Helado de Zarzamora</h2>
-      <p>Refrescante, cremoso y con el sabor intenso de la zarzamora.</p>
-    </div>
-    <div class="card">
-      <h2>Cheesecake de Zarzamora</h2>
-      <p>Suave cheesecake con salsa de zarzamora y tonos pasteles.</p>
-    </div>
-  </section>
-
-  <footer>
-    Hecho con amor y zarzamoras ♡
-  </footer>
+  </div>
 </body>
 </html>
